@@ -50,57 +50,37 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  border: 1px solid black;
+
 }
 .column-large {
+  display: flex;
+  flex-direction: column;
   width: 630px;
   border: 1px solid black;
+  justify-content: space-between;
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
-.column-large h1 {
-  display: flex;
-  background-image: url("../images/story-main.png");
-  height: 40%;
-  justify-content: center;
-  align-items: center;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 40px;
-  color: white;
-}
-.fall, .camaraman {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row;
-}
-.fall h1 {
-  display: flex;
-  background-image: url("../images/fall-season.png");
-  justify-content: center;
-  align-items: center;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-.camaraman h1 {
-  display: flex;
-  background-image: url("../images/camaraman.png");
-  justify-content: center;
-  align-items: center;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
-.column-medium {
-  width: 300px;
+.monument {
   border: 1px solid black;
 }
-.column-small {
-  width: 240px;
-  border: 1px solid black;
+.orca, .puget, .fall {
+  display:flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 315px;
+  border: 1px solid black
+}
+.burgers, .newyork, .camaraman {
+  display:flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items:flex-end;
+  flex-direction: row;
+  width: 315px;
+  border: 1px solid black
 }
