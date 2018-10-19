@@ -3,14 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*header section*/
 
 .header {
   display: flex;
   padding: 2px;
   justify-content: center;
-  border-bottom: 1px solid black;
 }
-
 .header-logo {
   display: flex;
   width: 50%;
@@ -20,12 +19,11 @@
 }
 .logo, .mytimes {
   color: MediumAquamarine;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 .mytimes {
-  padding-left: 5px;
+  padding-left: 10px;
 }
-
 .navigation {
   display: flex;
   width: 50%;
@@ -47,40 +45,93 @@
   font-weight: bold;
 }
 
+/*main container section*/
 .container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   border: 1px solid black;
-
+  padding-left: 75px;
+  padding-top: 30px;
 }
+
+/*large column section*/
 .column-large {
-  display: flex;
-  flex-direction: column;
   width: 630px;
   border: 1px solid black;
-  justify-content: space-between;
+}
+.story-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.monument {
+  justify-content: flex-start;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+}
+.left {
+  display: inline-block;
+  width: 315px;
+  border: 1px solid black;
+}
+
+.right {
+  display: inline-block;
+  float: right;
+  width: 315px;
+  border: 1px solid black;
+}
+.fall, .camaraman, .cats {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.orca, .burgers, .fbi {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+.monument, .puget,
+.mewyork, .washington,
+.brooklyn {
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
-.monument {
+.story-main, .monument, 
+.orca, .purget, .fall,
+.burgers, .newyork,
+.camaraman {
+  padding: 5px;
+  margin: auto;
+}
+
+
+/*medium column section*/
+.column-medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
   border: 1px solid black;
 }
-.orca, .puget, .fall {
-  display:flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 315px;
-  border: 1px solid black
+.fbi, .washington,
+.cats, .brooklyn {
+  padding: 5px;
+  margin: auto;
 }
-.burgers, .newyork, .camaraman {
-  display:flex;
-  justify-content: space-between;
-  align-content: flex-end;
-  align-items:flex-end;
-  flex-direction: row;
-  width: 315px;
-  border: 1px solid black
+
+
+/*small column section*/
+.column-small {
+  width: 240px;
+  border: 1px solid black;
 }
