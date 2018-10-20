@@ -31,12 +31,12 @@
   align-items: center;
   color: black;
 }
-.navigation ul li {
+ul li {
   display: inline-block;
-  list-style-type: none;
-  justify-content: flex-end;
-  padding-right: 20px;
-  margin: 0px;
+  padding: 20px 10px;
+  color: Black;
+}
+a {
   color: black;
 }
 .header-logo, .navigation {
@@ -49,50 +49,69 @@
 .container {
   display: flex;
   justify-content: space-around;
+  margin: 0 auto 78px auto;
   border: 1px solid black;
-  padding-left: 75px;
   padding-top: 30px;
+  padding-left: 70px;
 }
 
 /*large column section*/
 .column-large {
+  display: inline;
+  justify-content: space-around;
   width: 630px;
   border: 1px solid black;
 }
 .story-main {
   display: flex;
-  justify-content: space-around;
+  text-align: left;
   align-items: center;
+  width: 630px;
+  height: 300px;
+
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   color: white;
 }
+.story-main {
+    background-image: url("../images/story-main.png");
+    background-repeat: no-repeat;
+}
 .monument {
-  justify-content: flex-start;
   display: flex;
   border: 1px solid black;
-  flex-direction: column;
-}
-.left {
-  display: inline-block;
-  width: 315px;
-  border: 1px solid black;
+  margin-top: 0;
+  margin-left: 20px
 }
 
-.right {
-  display: inline-block;
-  float: right;
-  width: 315px;
-  border: 1px solid black;
+.fall {
+  display: flex;
+  background-image: url("../images/fall-season.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.camaraman {
+  display: flex;
+  background-image: url("../images/camaraman.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fall, .camaraman, .cats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
 }
 .orca, .burgers, .fbi {
+  margin: 0;
+  margin-bottom: 0;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -105,14 +124,14 @@
   font-size: 17px;
   color: black;
 }
-.story-main, .monument, 
+.story-main, .monument,
 .orca, .purget, .fall,
 .burgers, .newyork,
 .camaraman {
   padding: 5px;
-  margin: auto;
+  margin: 0 auto;
+  height: 250px
 }
-
 
 /*medium column section*/
 .column-medium {
@@ -123,15 +142,35 @@
   width: 300px;
   border: 1px solid black;
 }
+.cats {
+  background-image: url("../images/Cat-Ceo.png");
+  background-repeat: no-repeat;
+}
 .fbi, .washington,
 .cats, .brooklyn {
   padding: 5px;
   margin: auto;
 }
 
-
 /*small column section*/
 .column-small {
+  display: flex;
+  flex-direction: column;
   width: 240px;
   border: 1px solid black;
+}
+
+.news-bites {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.nav-tables {
+  align-items: center;
+  justify-content: space-between;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
 }
